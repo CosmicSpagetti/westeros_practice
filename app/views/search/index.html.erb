@@ -1,7 +1,7 @@
-<%= facade.count %>
-<section class='house-list'>
-<ul><% facade.each do |member| %>
-  <li class='name'><%= member.name %></li>
-  <li class='id'><%= member.id %></li>
+<%= facade.count %> Members
+<section class='House-list'>
+<ul><% facade.members.each do |member| %>
+  <li class='name'>House Member: <%= member.name %></li>
+  <li class='id'>Member id:<%= member.id %></li>
 </section></ul>
 <% end %>  
