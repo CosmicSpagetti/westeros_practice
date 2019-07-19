@@ -8,7 +8,7 @@ describe "As a user" do
 
     click_on "Get Members"
 
-    expect(current_path).to eq('/search?house=greyjoy')
+    expect(current_path).to eq('/search')
 
     expect(page).to have_content("7 Members")
 
