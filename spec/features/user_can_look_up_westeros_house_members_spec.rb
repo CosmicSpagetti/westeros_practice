@@ -15,6 +15,8 @@ describe "As a user" do
     within ".House-list" do 
       expect(page).to have_css(".name")
       expect(page).to have_css(".id")
+      expect(page).to have_content("Balon Greyjoy")
+      expect(page).to have_content("38")
     end
 #     ```As a user
 # When I visit "/"

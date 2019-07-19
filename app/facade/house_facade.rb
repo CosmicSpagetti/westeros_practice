@@ -4,11 +4,11 @@ class HouseFacade
   end
 
   def count 
-    service.count
+    service.first[:attributes][:members].count
   end
 
   def members
-    service.map do |member|
+    service.first[:attributes][:members].map do |member|
       HouseMember.new(member)
     end
   end

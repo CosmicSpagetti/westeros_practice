@@ -4,7 +4,7 @@ class WesterosService
   end
 
   def parse_house_response 
-    JSON.parse(get_house_response.body, symbolize_names: true)[:data].first[:attributes][:members]
+    JSON.parse(get_house_response.body, symbolize_names: true)[:data]
   end
 
 
